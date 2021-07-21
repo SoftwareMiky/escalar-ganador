@@ -1,0 +1,70 @@
+Se supone que si la temperatura es menor a 15 grados, hace frio. 
+Pedir una temperatura, e indicar si hace frio. 
+Si no, indicar que no hace frío.
+
+Narrativa:
+Entrada: Numero1 
+Salida: Cartel
+Proceso: Pido un numero, y lo guardo en la variable Temperatura. 
+Comparo el contenido de la variable Numero1 con 15. Si el resultado 
+es Verdadero, muestro un cartel “Hace Frio”. 
+De otra manera, muestro el Cartel “No hace Frio”
+
+AlgoritmoTemperatura
+    // Definición de variable
+    Definir Temperatura como Real
+    // Leo un número y lo guardo en la variable Temperatura
+    Mostrar "Ingrese la Temperatura"
+    Leer Temperatura
+    // Preguntar si el contenido de Temparatura es menor que 15
+    Si Temperatura < 15
+        // Si lo es, muestro un cartel indicando que hace frio
+        Mostrar "Hace Frio"
+    SiNo
+        // en caso contrario, muestro un cartel indicando que hace NO frio
+        Mostrar "No hace Frio"
+    FinSi
+FinAlgoritmo
+
+Pedir dos números, e indicar cual es el mayor, y cual el menor
+
+Narrativa: 
+Entrada: Num1 y Num2
+Se deben cargar dos valores, y guardarlos en la variables Num1 y Num2. 
+Hay tres alternativas: Que sean iguales, que Num1 sea Mayor 
+que Num2, o que Num2 sea Mayor que Num1
+En primer termino, entonces, comparamos si el valor contenido
+en Num1 es igual al valor contenido en Num2. En caso afirmativo,
+se muestra un cartel "Son Iguales". En caso negativo, se
+comprara si el valor contenido en Num1 es mayor que Num2. Si es 
+afirmativa la respueta, se muestra el cartel "El mayor es " y el valor
+contenido en Num1. De lo contrario, por descarte, se muestra
+el cartel "El mayor es " y el valor contenido en Num2
+
+Algoritmo EjercicioMayorMenor
+	// Defino las variables:
+	// Num1 y Num2: Los valores a cargar y comparar
+	Definir Num1, Num2 Como ENTERO
+	// Leo los valores de Num1 y Num2
+	Escribir "Ingrese un valor: "
+	Leer Num1
+	// Leo los valores de Num1 y Num2
+	Escribir "Ingrese otro valor: "
+	Leer Num2
+	// Comparo si sus contenidos son iguales
+	Si Num1 = Num2 Entonces
+		Mostrar "Son Iguales"
+	SiNo
+		Si Num1 > Num2 Entonces
+			Mostrar "El mayor es ", Num1
+		SiNo
+			Mostrar "El mayor es ", Num2
+		FinSi
+	FinSi
+FinAlgoritmo
+
+Se supone que si la temperatura es menor a 15º, hace frio; si es mayor o igual a 15º, 
+pero menor o igual a 21º, templado, y si hace más de 21º, hace calor. 
+Pedir una temperatura, e indicar si hace frio, calor, o está templado.
+
+Pedir dos números, y dividir el primero por el segundo.
